@@ -1,0 +1,55 @@
+
+/*---------------------------------------------------------
+
+	layout css
+
+---------------------------------------------------------*/
+
+
+body {
+	visibility: hidden; /* temporarily hide the content to allow time for jquery funkyness */
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+
+div.site-shim {
+	width: 100%;
+	height: 50%;
+	visibility: hidden;
+}
+
+form, .content-wrapper {
+	width: 100%;
+	background-image: url('../img/exertis-bg.gif');
+	background-position: center center;
+}
+
+.content {
+	width: 960px;
+	height: 700px;
+	float: none;
+	margin: 0 auto 0 auto;
+	text-align: left;
+	clear: both;
+	/* IE4ever Hack: Hide from IE4 **/
+	position: static;
+	/** end hack */
+}
+
+#company-image {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#company-redirect {
+	left: 220px;
+	top: 267px;
+	width: 525px;
+	height: 50px;
+	/*border: 1px solid #000;*/
+	position: absolute;
+	cursor: pointer;
+}
