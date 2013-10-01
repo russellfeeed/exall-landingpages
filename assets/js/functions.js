@@ -5,6 +5,9 @@ var Rebrander = {
 		'devwebsyscouk': { redirect: '', img: 'exertis.gif' }, // replace with 'squashed' test domain
 
 		'exertismicropcouk' : {redirect: 'www.micro-p.com', img: 'exertis-micro-p.gif'},                        
+		'exertisconectcouk' : {redirect: 'www.micro-p.com', img: 'exertis-micro-p.gif'},                        
+		'exertissecuritycouk' : {redirect: 'www.micro-p.com', img: 'exertis-micro-p.gif'},
+                
 		'exertisgemcouk' : {redirect: 'www.gem.co.uk', img: 'exertis-gem.gif'},
 		'exertisadventcouk': { redirect: 'www.adventdata.co.uk', img: 'exertis-advent.gif' },
 		'exertismsecouk': { redirect: 'www.msegroup.co.uk', img: 'exertis-mse.gif' },
