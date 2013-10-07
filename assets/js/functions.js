@@ -19,7 +19,9 @@ var Rebrander = {
 		'exertissupplychaincom': { redirect: 'www.sercomsolutions.com', img: 'exertis-supply-chain-services.gif' },
 
 		'exertiscom': { redirect: '', img: 'exertis.gif' },
-		'exertiscouk': { redirect: '', img: 'exertis.gif' }
+		'exertiscouk': { redirect: '', img: 'exertis.gif' },
+                
+                'exertisdigitalcom': { redirect: 'www.ztorm.com', img: 'exertis-ztorm.gif' }
 
 	},
 	
