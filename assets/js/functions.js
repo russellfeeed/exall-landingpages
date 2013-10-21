@@ -23,7 +23,7 @@ var Rebrander = {
 		'exertiscouk': { redirect: '', img: 'exertis.gif' },
 
                 'exertisdigitalcom': { redirect: 'www.ztorm.com', img: 'exertis-ztorm.gif' },
-		'exertisztormcom': { redirect: 'www.ztorm.com', img: 'exertis-ztorm.gif' },
+		'exertisztormcom': { redirect: 'www.ztorm.com', img: 'exertis-ztorm.gif' }
 
 	},
 
