@@ -1,13 +1,14 @@
 var Rebrander = {
 
 	redirectLookup: {
-		
+
 		'devwebsyscouk': { redirect: '', img: 'exertis.gif' }, // replace with 'squashed' test domain
 
-		'exertismicropcouk' : {redirect: 'www.micro-p.com', img: 'exertis-micro-p.gif'},                        
-		'exertisconectcouk' : {redirect: 'www.micro-p.com', img: 'exertis-micro-p.gif'},                        
-		'exertissecuritycouk' : {redirect: 'www.micro-p.com', img: 'exertis-micro-p.gif'},
-                
+		'exertismicropcouk' : {redirect: 'www.micro-p.com', img: 'exertis-micro-p.gif'},
+		'exertisconectcouk' : {redirect: 'conect.micro-p.com', img: 'exertis-micro-p.gif'},
+		'exertissecuritycouk' : {redirect: 'http://www.micropsecurity.com/', img: 'exertis-micro-p.gif'},
+		'exertismobilecouk' : {redirect: 'http://www.micropmobiley.com/', img: 'exertis-micro-p.gif'},
+
 		'exertisgemcouk' : {redirect: 'www.gem.co.uk', img: 'exertis-gem.gif'},
 		'exertisadventcouk': { redirect: 'www.adventdata.co.uk', img: 'exertis-advent.gif' },
 		'exertismsecouk': { redirect: 'www.msegroup.co.uk', img: 'exertis-mse.gif' },
@@ -20,12 +21,12 @@ var Rebrander = {
 
 		'exertiscom': { redirect: '', img: 'exertis.gif' },
 		'exertiscouk': { redirect: '', img: 'exertis.gif' },
-                
+
                 'exertisdigitalcom': { redirect: 'www.ztorm.com', img: 'exertis-ztorm.gif' },
 		'exertisztormcom': { redirect: 'www.ztorm.com', img: 'exertis-ztorm.gif' },
 
 	},
-	
+
 
 	imgpath: 'assets/img/',
 
@@ -39,10 +40,10 @@ var Rebrander = {
 		return squashedhost;
 	},
 
-	getImageFilename : function(host) { 
+	getImageFilename : function(host) {
 		return this.imgpath + this.redirectLookup[this.getSquashedHost(host)]['img'] ;
 	},
- 
+
 	getLinkURL : function (host) {
 		return this.redirectLookup[this.getSquashedHost(host)]['redirect'];
 	}
@@ -60,7 +61,7 @@ $(document).ready(function() {
 
 	if (redirectionURL != '') {
 		$('#company-redirect').attr('href', 'http://' + redirectionURL);
-	} else {	
+	} else {
 		$('#company-redirect').remove();
 	}
 
